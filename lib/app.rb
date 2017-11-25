@@ -3,7 +3,7 @@ require "sinatra/json"
 require "sinatra/reloader" if development?
 
 configure do
-  set :public_folder, File.dirname(__FILE__) + "/../json"
+  set :public_folder, File.dirname(__FILE__) + "/../public"
 end
 
 get "/json/*" do |json_file|
